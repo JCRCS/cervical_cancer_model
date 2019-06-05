@@ -1,7 +1,8 @@
-import pandas
-from descriptive_statistics.descriptiveStatistics import *
+import supervised_learning.supervised_learning as sl
 
 def main():
-    my_ds = Ds()
-    my_ds.group_byer()
-    pass
+    storage = r"./storage/"
+    my_sl = sl.Supervised_learning("storage")
+    my_sl.run()
+
+main()
