@@ -15,4 +15,6 @@ class Supervised_learning(object):
         test = pd.DataFrame(test)
         print(train.describe(include= "all"))
         mdl = RandomForestClassifier(n_estimators = 100, max_depth = 2, random_state = 123)
+        independant_train = df
+        dependant_train = df.["Byopsy"]
         #mdl.fit()
